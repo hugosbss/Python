@@ -6,15 +6,15 @@
 salario = float(input('Digite o salário do vendedor: '))
 vendas = float(input('Digite as vendas do mês: '))
 
-premio = 0  # Inicializando o prêmio como 0
+premio = 0 
 if vendas >= 1000 and vendas <= 5000:
     premio = 500
-elif vendas > 5000 and vendas <= 7500:  # Usei "elif" para simplificar
+elif vendas > 5000 and vendas <= 7500:
     premio = 750
 elif vendas > 7500:
     premio = 1000
 elif vendas <= 1000:
     print('Vendas abaixo de 1000,00 não têm premiação.')
 
-salario += premio  # Soma do salário e prêmio
+salario += premio
 print(f'O salário do vendedor é: R${salario:.2f}')
